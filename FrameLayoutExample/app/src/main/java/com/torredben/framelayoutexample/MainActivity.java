@@ -5,9 +5,11 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * MainActivity class
@@ -22,10 +24,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton
+                fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -56,4 +60,28 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void btnChangeText(View view){
+        TextView textview = findViewById(R.id.myTextView);
+        textview.setText("Change Text Button!");
+    }
+
+    public void rbOnClick(View view){
+        int id = view.getId();
+
+        switch (id){
+            case R.id.rb1:
+                Toast.makeText(this, "您选择的是看图片！", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.rb2:
+                Toast.makeText(this, "您选择的日期时间！", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.rb3:
+                Toast.makeText(this, "您选择的是下拉列表！", Toast.LENGTH_SHORT).show();
+                break;
+
+                default:break;
+        }
+    }
+
 }
