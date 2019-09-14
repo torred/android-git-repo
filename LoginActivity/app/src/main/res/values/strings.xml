@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LoginActivity</string>
+    <string name="titleLogin">请输入用户名和密码：</string>
+    <string name="etName">请输入用户名</string>
+    <string name="etPassword">请输入密码</string>
+    <string name="tbnLogin">登录</string>
+    <string name="action_login">登录</string>
+    <string name="action_call">打电话</string>
+    <string name="action_view">浏览网页</string>
+    <string name="action_calendar">设置日历</string>
+    <string name="action_send">发送图片</string>
+</resources>

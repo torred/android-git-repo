@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="@string/action_login"
+        android:id="@+id/action_login"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <group
+        android:orderInCategory="200">
+        <item
+            android:title="@string/action_call"
+            android:id="@+id/action_call"
+            android:orderInCategory="11"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/action_view"
+            android:title="@string/action_view"
+            android:orderInCategory="12"
+            app:showAsAction="never"/>
+
+        <item
+            android:title="@string/action_calendar"
+            android:id="@+id/action_calendar"
+            android:orderInCategory="13"
+            app:showAsAction="never"/>
+
+        <item
+            android:title="@string/action_send"
+            android:id="@+id/action_send"
+            android:orderInCategory="14"
+            app:showAsAction="never"/>
+    </group>
+</menu>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DataSave</string>
+    <string name="sample01">例一</string>
+    <string name="sample02">例二</string>
+    <string name="strWrite">写</string>
+    <string name="strRead">读</string>
+    <string name="btnWriteTitle">写文件</string>
+    <string name="btnReadTitel">读文件</string>
+    <string name="inputPrompt">请输入</string>
+    <string name="sample03">例三</string>
+    <string name="strNULL">NULL</string>
+    <string name="simple04Title">例四</string>
+    <string name="menu_add">新增</string>
+    <string name="menu_modify">修改</string>
+    <string name="menu_delete">删除</string>
+    <string name="titleName">姓名：</string>
+    <string name="titleInfo">信息：</string>
+    <string name="btnAdd">新增</string>
+    <string name="btnModify">修改</string>
+    <string name="tvPerson">人员信息：</string>
+    <string name="btnQuery">查询</string>
+    <string name="btnDelete">删除</string>
+</resources>
